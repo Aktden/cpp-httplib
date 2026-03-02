@@ -1,0 +1,10 @@
+^D:\CPPLIB\CPP-HTTPLIB\BUILD\CMAKEFILES\BFEA9DB96266FDFE7DCF03A5C4E2BFC9\GENERATE.STAMP.RULE
+setlocal
+D:\CMake\bin\cmake.exe -SD:/cpplib/cpp-httplib -BD:/cpplib/cpp-httplib/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/cpplib/cpp-httplib/build/ChatProject.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

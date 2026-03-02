@@ -1,0 +1,10 @@
+^D:\CPPLIB\CPP-HTTPLIB\CMAKELISTS.TXT
+setlocal
+D:\CMake\bin\cmake.exe -SD:/cpplib/cpp-httplib -BD:/cpplib/cpp-httplib/build --check-stamp-file D:/cpplib/cpp-httplib/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
